@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script defer src="../js/main.js"></script>
+    <title>The To Do List</title>
+</head>
+<body>
+    <section class="allWrap">
+      <h1 class="title">&#128204; To Do List</h1>
+
+      <div class="toDoList">
+        <div id="writeWrap">
+          <input type="text" placeholder="Write title" id="wirteList">
+          <button onclick="newElment()" class="addBtn" type="button">Add</button>
+        </div>
+
+        <ul id="myList">
+          <li><span>ListDelet</span></li>
+          <li><span>work out</span></li>
+        </ul>
+      </div>
+    </section>  
+
+    <img src="../img/moon.svg" alt="mode change" id="changeMode">
+</body>
+</html>

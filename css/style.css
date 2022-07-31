@@ -1,0 +1,109 @@
+
+
+.allWrap {
+ 
+}
+
+.title {
+    font-size: 1.875rem; /*30px*/
+    font-weight: 700;
+    color: var( --font-color);
+    padding-bottom: 30px;
+}
+
+.toDoList {
+    width: 350px;
+    height: 350px;;
+    background: var(--second-color);
+    border-radius: 5px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+
+#writeWrap {
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    width: 100%;
+    display: flex;
+}
+
+#writeWrap input[type="text"] {
+    border: none;
+    flex:1;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+#writeWrap .addBtn {
+    height: inherit;
+    background: #5581f7;
+    color: #fff;
+    border: none;
+    padding: 0 15px;
+    border-radius: 0 3px 3px 0;
+    transition: ease-in 0.3s;
+}
+
+#writeWrap .addBtn:hover {
+    background: #3e71fb;
+}
+
+
+#myList {
+    padding-top: 15px;
+}
+
+#myList li {
+    margin-bottom: 15px;
+    padding: 15px 10px 10px;
+    border-bottom: 1px solid var(--border-color) ;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#myList li span {
+    flex: 1;
+    line-height: 1.2;
+}
+
+
+#myList li:last-child {
+    margin-bottom: 0;
+}
+
+#myList li span.checked {
+    text-decoration: line-through;
+    color: #dfdfde;
+}
+
+.deleteList {
+    border: none;
+    background: none;
+    transition: ease-in .3s;
+    padding: 0 7px;
+    font-size: 20px;
+}
+
+.deleteList:hover {
+    background: var(--delete-hover);
+    border-radius: 50%;
+
+}
+
+#changeMode {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+
+
